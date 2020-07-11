@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search Results
+{% endblock %}
+  Results | The Bookie
+{% block body %}
+    <h1 style="color: black;">Results:</h1>
+    {% for book in books %}
+        <div class="result-box">
+                <h3>{{book['title']}}</h3>
+                <h4>{{book['author']}}</h4>
+                <h4>{{book['year']}}</h4>
+                <h4>{{book['isbn']}}</h4>
+                <a href="/book/{{book['isbn']}}">View Book</a>
+        </div>
+    {% endfor %}
+{% endblock %}

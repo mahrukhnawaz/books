@@ -1,0 +1,133 @@
+body{
+  margin:0;
+}
+.Head{
+  width: 100%;
+  height: 130px;
+  background-color: black;
+  font-size: 30px;
+}
+h1{
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0;
+}
+#Anchor{
+  font-size: 18px;
+  margin-left: 10px;
+  padding: 5px;
+  background-color: #DF1010;
+  color: white;
+  text-decoration: none;
+}
+.box{
+  background-color: black;
+  color: white;
+  width: 30%;
+  height: 300px;
+  border-radius: 50px;
+  margin-top: 8%;
+  margin-left: 35%;
+}
+.box p , .search-box p{
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.input-box,.button-box{
+  width: 90%;
+  height: 5%;
+  padding: 10px;
+  margin: 5px;
+  margin-left: 9px;
+  margin-right: 2px;
+  border: none;
+}
+#first-input{
+  margin-top: 5%;
+}
+.button-box,.search-button{
+  background-color: #DF1010;
+  color: white;
+  margin-left: 20px;
+}
+button:hover{
+  cursor: pointer;
+}
+#search_{
+  background-color: black;
+  padding: 30px;
+  color: white;
+  margin-top: 3%;
+  border: none;
+  width: 80%;
+  margin-left: 30px;
+  font-size: 24px;
+}
+.search-button{
+  background-color: #DF1010;
+  border: none;
+  padding: 30px;
+  font-size: 24px;
+  color: white;
+}
+.result-box{
+  background-color: black;
+  color: white;
+  margin: 50px;
+  margin-left: 90px;
+  border-radius: 3px;
+  padding: 3px;
+  text-align: center;
+  display: inline-block;
+  width: 20%;
+}
+.result-box a{
+  text-decoration: none;
+  color: white;
+  background-color: #DF1010;
+  padding: 5px;
+}
+/* Book Review Page */
+
+.book-cover{
+  background-color: black;
+  width: 800px;
+  height: 450px;
+  margin-top: 10px;
+  padding: 50px;
+  margin-left: 15%;
+  margin-right: 0;
+  color: white;
+  text-align: center;
+}
+.book-cover img{
+  float: left;
+  padding: 20px;
+}
+hr{
+  border-top: 5px;
+  border-width: thick;
+  background-color: black;
+}
+.Other-reviews{
+  background-color: white;
+  padding-left: 10px;
+  margin-left: 191px;
+  margin-right: 250px;
+}
+.selection-box{
+  width:100px;
+  background-color: lightblue;
+  font-size: 18px;
+}
+.review-button{
+    background-color: #DF1010;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+}

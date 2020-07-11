@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Search| The Bookie
+{% endblock %}
+
+{% block body %}
+
+        <div>
+          <h1 style="color: black;">Search a Book:</h1>
+          <form action="/search" method="GET">
+            <input  name="search" placeholder="search by title, author or isbn number" id="search_">
+            <button  name="button" type="submit" class="search-button">Search</button>
+          </form>
+        </div>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Login |The Bookie
+{% endblock %}
+
+{% block body %}
+  <div class="box">
+      <p>Login</p>
+    <form class="login-form" action="/login" method="post">
+      <input type="text" name="username" placeholder="Username" class="input-box" id="first-input">
+      <input type="password" name="password" placeholder="Password" class="input-box">
+      <button type="submit" name="button" class="button-box">Login</button>
+    </form>
+  </div>
+
+{% endblock %}

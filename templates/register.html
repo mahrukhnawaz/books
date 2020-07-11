@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Register| The Bookie
+{% endblock %}
+
+{% block body %}
+  <div class="box">
+    <p>Register</p>
+    <form action="/register" method="POST">
+        <input  name="username" type="text" placeholder="Enter Username" class="input-box" id="first-input">
+        <input  name="password" type="password" placeholder="Enter Password" class="input-box">
+        <button  name="button" type="submit" class="button-box">Submit</button>
+    </form>
+  </div>
+{% endblock %}

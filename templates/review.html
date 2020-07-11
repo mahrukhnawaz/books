@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Book Page | The Bookie
+{% endblock %}
+
+{% block body %}
+
+    <!-- Pasting Images and book info -->
+    <div class="book-cover">
+         <img src="http://covers.openlibrary.org/b/isbn/{{bookinfo[0]['isbn']}}-M.jpg" alt="Book Cover" width="300px">
+          <h1>{{bookinfo[0]['title']}}</h1>
+          <h3>Author: {{bookinfo[0]['author']}}</h3>
+          <h3>Published In: {{bookinfo[0]['year']}}</h3>
+          <h3>ISBN Number: {{bookinfo[0]['isbn']}}</h3>
+          <h3>Review Count: {{bookinfo[1]['work_ratings_count']}}</h3>
+          <h3>Average Rating: {{bookinfo[1]['average_rating']}}</h3>
+
+    </div>
+      <!-- Pasting Revies from good reads -->
+
+        {% if reviews %}
+        <h3 style="margin-left: 200px;">Review from other readers:</h3>
+
+        {% for review in reviews %}
+        <div class="Other-reviews">
+        <hr>
+        <h4>{{review['username']}}</h4>
+        <h4>Comment: </h4>
+        <p>{{review['comment']}}</p>
+        <h4>Rating: </h4>
+        <p>{{review['rating']}}</p>
+        <hr>
+        </div>
+        {% endfor %}
+        {% else %}
+          <p>Be the first to give review.</p>
+        {% endif %}
+
+
+      <!-- Input Review -->
+      <div class="Other-reviews">
+
+      <form class="" action="" method="post">
+        <h3>Give Review:</h3>
+        <textarea type="text" name="comment" value="" placeholder="Tell us about your experiance" style="width:600px;" style="height:500px;"></textarea>
+        <br>
+        <h5>Rating: </h5>
+      <select class="selection-box" name="rating">
+        <option value="1"> 1 </option>
+        <option value="2"> 2 </option>
+        <option value="3"> 3 </option>
+        <option value="4"> 4 </option>
+        <option value="5"> 5 </option>
+      </select>
+      <button type="submit" name="button" class="review-button">Submit</button>
+    </form>
+  </div>
+
+{% endblock %}
